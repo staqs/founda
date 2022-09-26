@@ -6,5 +6,51 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'steam-streamer';
+  title = 'Founda-found';
+
+  userProfile = [{
+    heading : '',
+    socialHandles : [{facebook :'url' }, {linkedin : ''}, {twitter : ''}],
+    website : '',
+    description : '',
+    headline : ''
+  }, 
+
+  {
+    heading : '',
+    socialHandles : [{facebook :'url' }, {linkedin : ''}, {twitter : ''}],
+    website : '',
+    description : '',
+    headline : ''
+  },
+  {
+    heading : '',
+    socialHandles : [{facebook :'url' }, {linkedin : ''}, {twitter : ''}],
+    website : '',
+    description : '',
+    headline : ''
+  },
+  {
+    heading : '',
+    socialHandles : [{facebook :'url' }, {linkedin : ''}, {twitter : ''}],
+    website : '',
+    description : '',
+    headline : ''
+  },
+  {
+    heading : '',
+    socialHandles : [{facebook :'url' }, {linkedin : ''}, {twitter : ''}],
+    website : '',
+    description : '',
+    headline : ''
+  },
+  {
+    heading : '',
+    socialHandles : [{facebook :'url' }, {linkedin : ''}, {twitter : ''}],
+    website : '',
+    description : '',
+    headline : ''
+  }
+]
+
 }
