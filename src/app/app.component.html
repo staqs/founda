@@ -7,10 +7,10 @@
 </div>
 
 <div class="left-half">
+    <h5> Profile </h5>
     <div class="article">
-      
         
-        <div class="card" *ngFor="let user of userProfile">
+        <div class="card"  *ngFor="let user of userProfile" style="background-position: center top; background:linear-gradient(to bottom, #06057800,  rgba(0, 0, 0, 100)), url('{{user.imageUrl}}')">
            <div class="card-title">
             <h5> {{user.heading}}  </h5>
            </div>
@@ -23,14 +23,17 @@
             </div>
                   
             <ul *ngFor="let social of user.socialHandles" class="social-handles">
+                <a href=""> {{social.category}} </a>
                 <a href=""> {{social.facebook}} </a>
                 <a href=""> {{social.linkedin}} </a>
                 <a href=""> {{social.twitter}} </a>
-              
+               
             </ul>
 
 
         </div>
+
+
  
     </div>
 

@@ -1,16 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-profile-card',
+  templateUrl: './profile-card.component.html',
+  styleUrls: ['./profile-card.component.scss']
 })
-export class AppComponent {
+export class ProfileCardComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
   title = 'Founda-found';
 
   userProfile = [{
     heading : 'Emmanuel Antwi-Darkwa',
-    socialHandles : [{facebook :'www.facebook.com' }, {linkedin : 'www.linkedin.com'}, {twitter : 'www.twitter.com'}, { category : 'Technology'}],
+    socialHandles : [{facebook :'www.facebook.com' }, {linkedin : 'www.linkedin.com'}, {twitter : 'www.twitter.com'}],
     website : 'www.websitenew.com.gh',
     description : 'Having spent much of his professional career in various capacities at Volta River Authority (VRA), Emmanuel Antwi-Darkwa is currently the Chief Executive Officer of the Authority.',
     headline : 'Next generation of UI/UX tooling',
@@ -22,8 +28,7 @@ export class AppComponent {
     socialHandles : [{facebook :'url' }, {linkedin : ''}, {twitter : ''}],
     website : '',
     description : '',
-    headline : '',
-    imageUrl : 'https://ghanaceosummit.com/wp-content/uploads/2022/02/Frank-Oye-2.jpg'
+    headline : ''
   },
   {
     heading : 'Ernest De-Graft Egyir',
@@ -45,16 +50,14 @@ export class AppComponent {
     socialHandles : [{facebook :'url' }, {linkedin : ''}, {twitter : ''}],
     website : '',
     description : '',
-    headline : '',
-    imageUrl  : 'https://ghanaceosummit.com/wp-content/uploads/2022/02/Ursula-Owusu-Ekuful-2.jpg'
+    headline : ''
   },
   {
     heading : 'ayssam Fakhry',
     socialHandles : [{facebook :'url' }, {linkedin : ''}, {twitter : ''}],
     website : '',
     description : '',
-    headline : '',
-    imageUrl : 'https://ghanaceosummit.com/wp-content/uploads/2022/02/Ursula-Owusu-Ekuful-2.jpg'
+    headline : ''
   }
 ]
 

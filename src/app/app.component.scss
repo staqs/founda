@@ -63,6 +63,8 @@ div {
     width: 100%;
     font-family: inherit;
 
+ 
+
     .card {
         margin: 9px;
         width: 25rem;
@@ -71,15 +73,18 @@ div {
         color: white;
         display: flex;
         flex-direction: column;
+        background-size: cover;
+        object-fit: contain;
+        // position: ;
         transition: transform 0.2s;
-        background: linear-gradient(to bottom,
-                rgba(56, 33, 227, 0),
-                rgba(0, 0, 0, 100)),
-            url("../assets/imagee.jpg");
-        
-
+      
+    
             .card-title{
                 width: 100%;
+            }
+
+            &:hover{
+                filter: grayscale(100%);
             }
 
         .social-handles {
@@ -101,6 +106,8 @@ div {
         img {
             width: 100%;
             z-index: -90;
+            
+          
         }
 
         .info {
