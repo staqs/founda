@@ -54,7 +54,7 @@ export class AppComponent {
     website : '',
     description : '',
     headline : '',
-    imageUrl : 'https://ghanaceosummit.com/wp-content/uploads/2022/02/Ursula-Owusu-Ekuful-2.jpg'
+    imageUrl : 'https://ghanaceosummit.com/wp-content/uploads/2022/02/Ammishadai-Owusu-Amoah.jpg'
   }
 ]
 

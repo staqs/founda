@@ -62,7 +62,7 @@ div {
     flex-wrap: wrap;
     width: 100%;
     font-family: inherit;
-
+    // height: 89px;
  
 
     .card {
@@ -75,8 +75,8 @@ div {
         flex-direction: column;
         background-size: cover;
         object-fit: contain;
-        // position: ;
         transition: transform 0.2s;
+        
       
     
             .card-title{
@@ -114,10 +114,12 @@ div {
             width: 100%;
             font-size: 14px;
             line-height: 20px;
+            opacity: 0;
 
             p:hover {
                 text-decoration: underline;
                 cursor: pointer;
+                opacity: 100%;
             }
         }
 
@@ -148,4 +150,28 @@ div {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #917777;
+}
+
+
+.wrapper{
+    // width: 100%;
+    // display: flex;
+    // flex-direction: column;
+}
+
+@media screen and (max-width: 800px) {
+
+    // .wrapper{
+    //     flex-direction: column;
+    // }
+
+  .right-half{
+    // background-color: red;
+    display: none;
+    
+  }
+
+  .left-half{
+    width: 100%;
+  }
 }
