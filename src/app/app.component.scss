@@ -16,7 +16,7 @@ body {
     font-family: sans-serif;
 }
 
-article{
+article {
     position: relative;
     top: 50%;
     left: 50%;
@@ -24,8 +24,6 @@ article{
     transform: translate(-50%, -50%);
     color: white;
 }
-
-
 
 h1 {
     font-size: 1.75rem;
@@ -40,8 +38,6 @@ div {
     padding: 1rem;
 }
 
-
-
 .left-half {
     background: #4c3c2a;
     height: 100vh;
@@ -53,40 +49,77 @@ div {
 }
 
 .right-half {
-    background: #314bdc;
+    background: #202541;
     height: 100vh;
-    // overflow: hidden;
     overflow-y: scroll;
 }
-
-
 
 .article {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     // align-items: center;
     flex-wrap: wrap;
     width: 100%;
- 
-    .card{
-     margin: 4px;
-     width: 25rem;
-     height: 25rem;
-     background-color: whitesmoke;
+    font-family: inherit;
+
+    .card {
+        margin: 9px;
+        width: 25rem;
+        height: 25rem;
+        // padding: 1em;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.2s;
+        background: linear-gradient(to bottom,
+                rgba(56, 33, 227, 0),
+                rgba(0, 0, 0, 100)),
+            url("../assets/imagee.jpg");
+        
+
+            .card-title{
+                width: 100%;
+            }
+
+        .social-handles {
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+
+        a {
+            text-decoration: none;
+            color: whitesmoke;
+            margin: 0;
+            padding: 0px 1rem;
+            font-size: 10px;
+            line-height: 15px;
+        }
+
+        img {
+            width: 100%;
+            z-index: -90;
+        }
+
+        .info {
+            width: 100%;
+            font-size: 14px;
+            line-height: 20px;
+
+            p:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+
+        &:hover {
+            // transform: scale(20%);
+            transform: scale(1.05);
+        }
     }
- }
-
-
-
-
-
-
-
-
-
-
-
+}
 
 /* width */
 ::-webkit-scrollbar {

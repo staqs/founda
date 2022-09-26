@@ -4,12 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NewProgramsLayoutComponent } from './layouts/new-programs-layout/new-programs-layout.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    
+    NewProgramsLayoutComponent
   ],
   imports: [
     BrowserModule,

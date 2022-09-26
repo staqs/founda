@@ -2,22 +2,38 @@
 <div class="right-half">
     <article>
         <h1> Founda-found </h1>
-        <p> Profiling Africa most innovative, inspiring and impact leaders. </p>
+        <p> Profiling Africa most innovative, inspiring, <br> profound and impactful leaders. </p>
     </article>
 </div>
 
 <div class="left-half">
     <div class="article">
-
-        <div class="card"  *ngFor="let user of userProfile">
-            <h5> Title  </h5>
-            <a href=""> Link </a>
-            <a href=""> Social Handles </a>
-            <a href=""> Website </a>
-
-            <div>
-                Info 
+      
+        
+        <div class="card" *ngFor="let user of userProfile">
+           <div class="card-title">
+            <h5> {{user.heading}}  </h5>
+           </div>
+     
+        
+            <div class="info">
+                <p>
+                    {{user.description}}
+                </p>
             </div>
+                  
+            <ul *ngFor="let social of user.socialHandles" class="social-handles">
+                <a href=""> {{social.facebook}} </a>
+                <a href=""> {{social.linkedin}} </a>
+                <a href=""> {{social.twitter}} </a>
+              
+            </ul>
+
+
         </div>
+ 
     </div>
+
+
+
 </div>
