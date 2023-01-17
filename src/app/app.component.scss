@@ -12,7 +12,7 @@ div {
 }
 
 body {
-    color: #fff;
+    // color: #fff;
     font-family: sans-serif;
 }
 
@@ -39,18 +39,17 @@ div {
 }
 
 .left-half {
-    background: #4c3c2a;
     height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
-    // bottom: 0;
     overflow: scroll;
+    color: black;
 }
 
 .right-half {
-    background: #202541;
     height: 100vh;
+    color: black;
     overflow-y: scroll;
 }
 
@@ -58,41 +57,33 @@ div {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    // align-items: center;
     flex-wrap: wrap;
     width: 100%;
     font-family: inherit;
-    // height: 89px;
- 
 
     .card {
         margin: 9px;
         width: 25rem;
         height: 25rem;
-        // padding: 1em;
         color: white;
         display: flex;
         flex-direction: column;
         background-size: cover;
         object-fit: contain;
         transition: transform 0.2s;
-        
-      
-    
-            .card-title{
-                width: 100%;
-            }
 
-            &:hover{
-                filter: grayscale(100%);
-            }
+        .card-title {
+            width: 100%;
+        }
+
+        &:hover {
+            filter: grayscale(100%);
+        }
 
         .social-handles {
             display: flex;
             flex-direction: column;
-            
         }
-
 
         a {
             text-decoration: none;
@@ -106,8 +97,6 @@ div {
         img {
             width: 100%;
             z-index: -90;
-            
-          
         }
 
         .info {
@@ -152,26 +141,17 @@ div {
     background: #917777;
 }
 
-
-.wrapper{
-    // width: 100%;
-    // display: flex;
-    // flex-direction: column;
-}
-
 @media screen and (max-width: 800px) {
-
     // .wrapper{
     //     flex-direction: column;
     // }
 
-  .right-half{
-    // background-color: red;
-    display: none;
-    
-  }
+    .right-half {
+        // background-color: red;
+        display: none;
+    }
 
-  .left-half{
-    width: 100%;
-  }
+    .left-half {
+        width: 100%;
+    }
 }
